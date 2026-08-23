@@ -134,9 +134,12 @@ def create_report(source_folder, output_file):
 
 
             report.write(
-                f"{indent}## FOLDER: {current.name}\n\n"
+                f"{indent}## FOLDER: {current.name}\n"
             )
 
+            report.write(
+                f"{indent}   PATH: {relative}\n\n"
+            )
 
             for filename in sorted(files):
 
@@ -151,6 +154,10 @@ def create_report(source_folder, output_file):
 
                 report.write(
                     f"{indent}- FILE: {filename}\n"
+                )
+
+                report.write(
+                    f"{indent}  PATH: {relative}\n"
                 )
 
                 report.write(
