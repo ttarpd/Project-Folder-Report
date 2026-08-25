@@ -101,8 +101,6 @@ These values can be changed by editing the `IGNORED_FOLDERS` set near the top of
 
 ## Requirements
 
-## Requirements
-
 Folder Report uses only modules from the Python standard library.
 
 No third-party Python packages are required.
@@ -178,8 +176,8 @@ python3 folder_report.py "/home/user/projects/MyApp" "/home/user/reports"
 
 Both the source folder and output directory must already exist.
 
-If the source path does not exist, is not a directory, or the output directory does not exist, 
-Folder Report exits with an explanatory error message.
+If the source path does not exist or is not a directory, or the output directory does 
+not exist or is not a directory, Folder Report exits with an explanatory error message.
 
 ## Example
 
@@ -516,7 +514,7 @@ Instead of uploading many individual source files, the generated report can prov
 - source code;
 - tests;
 - Markdown documentation;
-- TOML configuration; and
+- TOML configuration;
 - other supported project files;
 - the Git branch and commit represented by the snapshot;
 - whether uncommitted changes were present;
@@ -540,8 +538,8 @@ In particular:
 - supported source files are identified by file extension;
 - text files are expected to use UTF-8 encoding;
 - there is currently no command-line option for changing exclusions or extensions;
-- symbolic links and unusual filesystem structures are not handled specially; and
-- very large source trees can produce very large output files.
+- symbolic links and unusual filesystem structures are not handled specially;
+- very large source trees can produce very large output files;
 - Git metadata requires the source folder itself to be the Git repository root;
 - Git must be installed and available on the system `PATH` for Git metadata to be collected;
 - project name and version detection currently relies on `pyproject.toml`;
