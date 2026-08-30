@@ -25,6 +25,7 @@ IGNORED_FOLDERS = {
     "env",
     ".idea",
     ".vscode",
+    "personal",
 }
 
 SOURCE_EXTENSIONS = {
